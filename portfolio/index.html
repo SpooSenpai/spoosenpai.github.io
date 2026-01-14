@@ -7,11 +7,10 @@
     <meta name="description" content="Digital artist specializing in stream assets, osu! skins, and tournament graphics" />
     <meta name="theme-color" content="#10071f" />
     
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Spoo's Creative Portfolio" />
+    <meta property="og:title" content="Spoo's Portfolio" />
     <meta property="og:description" content="Digital artist specializing in stream assets, osu! skins, and tournament graphics" />
     <meta property="og:image" content="https://spooport.carrd.co/assets/images/card.jpg?v=9f729f0a" />
-    <meta property="og:url" content="https://spooport.carrd.co" />
+    <meta property="og:url" content="https://spoosenpai.xyz/portfolio" />
     <meta property="og:type" content="website" />
     
     <!-- Fonts -->
@@ -1335,8 +1334,7 @@
                      class="hero-logo">
                 <h1>SpooSenpai's<br> Portfolio</h1>
                 <p class="hero-subtitle">
-                    Digital artist specializing in stream assets, osu! skins, and tournament graphics. 
-                    Explore my collection of creative works designed with passion and precision.
+                    Hello! Welcome to my Portfolio. My works are stored in this side of my website. Have fun exploring!
                 </p>
                 <div class="hero-cta">
                     <a href="#stream-assets" class="btn btn-primary">
@@ -2032,26 +2030,29 @@
                     <span class="nav-logo">Spoo</span>
                 </a>
                 
-                <div class="social-links">
-                    <a href="#" class="social-link" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="social-link" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://osu.ppy.sh/users/spoo" class="social-link" aria-label="osu! Profile" target="_blank">
-                        <i class="fas fa-gamepad"></i>
-                    </a>
-                    <a href="https://github.com" class="social-link" aria-label="GitHub" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://twitch.tv" class="social-link" aria-label="Twitch" target="_blank">
-                        <i class="fab fa-twitch"></i>
-                    </a>
-                </div>
+<div class="social-links">
+  <a href="https://x.com/SpooSenpai" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://www.twitch.tv/spoo_senpai" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitch">
+    <i class="fab fa-twitch"></i>
+  </a>
+  <a href="https://discord.gg/Mc7RdxndjP" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+    <i class="fab fa-discord"></i>
+  </a>
+  <a href="https://www.youtube.com/@SpooSenpai" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+  <a href="https://osu.ppy.sh/users/11805037" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="osu!">
+    <svg viewBox="0 0 512 512" class="osu-icon" aria-hidden="true">
+      <circle cx="256" cy="256" r="240" fill="none" stroke="currentColor" stroke-width="48" />
+      <text x="256" y="315" text-anchor="middle" font-size="240" font-family="Arial Black, Arial, sans-serif" fill="currentColor">osu!</text>
+    </svg>
+  </a>
+</div>
                 
                 <p class="copyright">
-                    © 2024 Spoo's Creative Portfolio. All rights reserved.<br>
+                    © 2026 Spoo's Portfolio. All rights reserved.<br>
                     Made with <i class="fas fa-heart" style="color: #ff6b8b;"></i> passion and creativity.
                 </p>
             </div>
@@ -2201,12 +2202,11 @@
             // Add click event to gallery items
             allGalleryItems.forEach((item, index) => {
                 item.addEventListener('click', function(e) {
-                    // Don't open preview if clicking on an external link
-                    if (this.tagName === 'A' && this.getAttribute('href') && 
-                        !this.getAttribute('href').startsWith('#') &&
-                        !this.getAttribute('data-image')) {
-                        return; // Allow default link behavior
-                    }
+                        // Don't open preview if clicking on an anchor with a real href (external/internal anchor links)
+                        // This ensures anchor gallery items (like osu! skins linking to osu.ppy.sh) navigate normally.
+                        if (this.tagName === 'A' && this.getAttribute('href') && !this.getAttribute('href').startsWith('#')) {
+                            return; // Allow default link behavior (follow the link)
+                        }
                     
                     e.preventDefault();
                     e.stopPropagation();
