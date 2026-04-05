@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Spoo's Portfolio</title>
+    <title>Spoo's Portfolio | Digital Art & Design</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="description" content="Digital artist specializing in stream assets, osu! skins, and tournament graphics" />
-    <meta name="theme-color" content="#10071f" />
+    <meta name="theme-color" content="#0a0615" />
     
     <meta property="og:title" content="Spoo's Portfolio" />
     <meta property="og:description" content="Digital artist specializing in stream assets, osu! skins, and tournament graphics" />
@@ -16,66 +16,55 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome for Icons -->
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* === CSS RESET & VARIABLES === */
-        :root {
-            /* Enhanced Color Palette */
-            --primary-dark: #0a0615;
-            --secondary-dark: #10071f;
-            --accent-purple: #8a2be2;
-            --accent-pink: #ff6b8b;
-            --accent-blue: #4a90e2;
-            --accent-gold: #ffd166;
-            --accent-teal: #00d4aa;
-            --text-primary: #ffffff;
-            --text-secondary: rgba(255, 255, 255, 0.85);
-            --text-tertiary: rgba(255, 255, 255, 0.6);
-            
-            /* Enhanced Gradients */
-            --gradient-primary: linear-gradient(135deg, #8a2be2 0%, #ff6b8b 50%, #4a90e2 100%);
-            --gradient-gold-purple: linear-gradient(57deg, #ffd166 32%, #8a2be2 64%);
-            --gradient-dark: linear-gradient(180deg, rgba(10, 6, 21, 0) 0%, #0a0615 100%);
-            --gradient-neon: linear-gradient(90deg, #00d4aa, #8a2be2, #ff6b8b);
-            --gradient-glow: radial-gradient(circle at center, rgba(138, 43, 226, 0.2) 0%, transparent 70%);
-            
-            /* Spacing */
-            --section-spacing: 140px;
-            --container-padding: clamp(20px, 5vw, 100px);
-            
-            /* Transitions */
-            --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
-            --transition-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            --transition-slow: all 0.6s var(--transition-smooth);
-            
-            /* Shadows */
-            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.4);
-            --shadow-xl: 0 25px 50px rgba(138, 43, 226, 0.25);
-            --shadow-neon: 0 0 20px rgba(138, 43, 226, 0.5), 0 0 40px rgba(138, 43, 226, 0.3);
-            
-            /* Border Radius */
-            --radius-sm: 12px;
-            --radius-md: 24px;
-            --radius-lg: 48px;
-            --radius-xl: 80px;
-            
-            /* Glass Effect */
-            --glass-bg: rgba(255, 255, 255, 0.08);
-            --glass-border: rgba(255, 255, 255, 0.15);
-            --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            
-            /* Image Preview */
-            --preview-z-index: 9999;
-        }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        :root {
+            --primary-dark: #0a0615;
+            --secondary-dark: #10071f;
+            --accent-purple: #a855f7;
+            --accent-pink: #f43f5e;
+            --accent-blue: #3b82f6;
+            --accent-gold: #fbbf24;
+            --accent-teal: #2dd4bf;
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.85);
+            --text-tertiary: rgba(255, 255, 255, 0.6);
+            
+            --gradient-primary: linear-gradient(135deg, #a855f7 0%, #f43f5e 50%, #3b82f6 100%);
+            --gradient-gold-purple: linear-gradient(57deg, #fbbf24 25%, #a855f7 70%);
+            --gradient-dark: linear-gradient(180deg, rgba(10, 6, 21, 0) 0%, #0a0615 100%);
+            --gradient-neon: linear-gradient(90deg, #2dd4bf, #a855f7, #f43f5e);
+            --gradient-glow: radial-gradient(circle at center, rgba(168, 85, 247, 0.25) 0%, transparent 70%);
+            
+            --section-spacing: 120px;
+            --container-padding: clamp(20px, 5vw, 80px);
+            
+            --transition-smooth: cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            --transition-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            
+            --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.5);
+            --shadow-xl: 0 25px 45px rgba(168, 85, 247, 0.3);
+            --shadow-neon: 0 0 20px rgba(168, 85, 247, 0.4), 0 0 35px rgba(244, 63, 94, 0.2);
+            --shadow-glow: 0 8px 32px rgba(168, 85, 247, 0.2);
+            
+            --radius-sm: 16px;
+            --radius-md: 24px;
+            --radius-lg: 40px;
+            --radius-xl: 80px;
+            
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glass-border-hover: rgba(168, 85, 247, 0.4);
         }
 
         html {
@@ -86,7 +75,7 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.7;
+            line-height: 1.6;
             color: var(--text-primary);
             background: var(--primary-dark);
             overflow-x: hidden;
@@ -94,6 +83,7 @@
             min-height: 100vh;
         }
 
+        /* animated background with floating orbs */
         body::before {
             content: '';
             position: fixed;
@@ -102,149 +92,161 @@
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(circle at 15% 40%, rgba(138, 43, 226, 0.2) 0%, transparent 50%),
-                radial-gradient(circle at 85% 25%, rgba(255, 107, 139, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 35% 85%, rgba(74, 144, 226, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 75% 75%, rgba(255, 209, 102, 0.1) 0%, transparent 50%),
-                linear-gradient(180deg, rgba(10, 6, 21, 0.9) 0%, transparent 20%);
+                radial-gradient(circle at 15% 40%, rgba(168, 85, 247, 0.2) 0%, transparent 55%),
+                radial-gradient(circle at 85% 25%, rgba(244, 63, 94, 0.15) 0%, transparent 55%),
+                radial-gradient(circle at 35% 85%, rgba(59, 130, 246, 0.12) 0%, transparent 55%),
+                radial-gradient(circle at 75% 75%, rgba(251, 191, 36, 0.08) 0%, transparent 50%);
             pointer-events: none;
-            z-index: -1;
+            z-index: -2;
         }
 
-        /* === TYPOGRAPHY === */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        /* custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--primary-dark);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent-purple);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-pink);
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--container-padding);
+            width: 100%;
+        }
+
+        /* typography */
         h1, h2, h3, h4 {
             font-family: 'Space Grotesk', sans-serif;
             font-weight: 700;
-            line-height: 1.1;
-            letter-spacing: -0.5px;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
         }
 
         h1 {
-            font-size: clamp(3.5rem, 10vw, 6rem);
+            font-size: clamp(3.2rem, 10vw, 6rem);
             background: var(--gradient-gold-purple);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 1.5rem;
-            text-shadow: 0 10px 30px rgba(138, 43, 226, 0.3);
-            position: relative;
             text-align: center;
+            position: relative;
         }
-
         h1::after {
             content: '';
             position: absolute;
-            bottom: -10px;
+            bottom: -15px;
             left: 50%;
             transform: translateX(-50%);
-            width: 200px;
+            width: 120px;
             height: 4px;
             background: var(--gradient-primary);
-            border-radius: 2px;
-            opacity: 0.7;
+            border-radius: 4px;
         }
 
         h2 {
-            font-size: clamp(2.5rem, 6vw, 4rem);
-            margin-bottom: 2.5rem;
-            position: relative;
-            display: inline-block;
+            font-size: clamp(2.2rem, 6vw, 3.6rem);
+            margin-bottom: 1.5rem;
             text-align: center;
-            padding: 0 20px;
             width: 100%;
         }
-
-        h2::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: -30px;
-            width: 20px;
-            height: 20px;
-            background: var(--gradient-primary);
-            border-radius: 50%;
-            transform: translateY(-50%);
+        .section-header {
+            margin-bottom: 3rem;
         }
-
-        h2::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            right: -30px;
-            width: 20px;
-            height: 20px;
-            background: var(--gradient-primary);
-            border-radius: 50%;
-            transform: translateY(-50%);
+        /* Use Bagel Fat One for section titles */
+        .section-header h2 {
+            display: inline-block;
+            padding-bottom: 0.5rem;
+            position: relative;
+            font-family: 'Bagel Fat One', cursive;
+            letter-spacing: 0.5px;
+            font-weight: 400;
+            font-size: clamp(2rem, 5.5vw, 3rem);
         }
-
-        .section-header h2::before,
         .section-header h2::after {
-            display: none;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gradient-primary);
+            border-radius: 4px;
+        }
+        .section-header p {
+            max-width: 700px;
+            margin: 1rem auto 0;
+            color: var(--text-tertiary);
+        }
+
+        /* Add consistent spacing between sections using the defined variable */
+        section {
+            padding: var(--section-spacing) 0;
+        }
+
+        /* Reduce section padding on smaller screens */
+        @media (max-width: 820px) {
+            section {
+                padding: calc(var(--section-spacing) * 0.6) 0;
+            }
         }
 
         h3 {
-            font-size: 2rem;
-            margin-bottom: 1.25rem;
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: var(--text-secondary);
-            margin-bottom: 2rem;
             max-width: 700px;
-            line-height: 1.8;
+            line-height: 1.7;
             text-align: center;
             margin-left: auto;
             margin-right: auto;
         }
 
-        .text-gradient {
-            background: var(--gradient-primary);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 700;
-        }
-
-        /* === LAYOUT & CONTAINERS === */
-        .container {
-            max-width: 1600px;
-            margin: 0 auto;
-            padding: 0 var(--container-padding);
-        }
-
-        section {
-            padding: var(--section-spacing) 0;
-            position: relative;
-        }
-
-        /* === NAVIGATION === */
+        /* navigation */
         .main-nav {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            padding: 15px var(--container-padding);
+            padding: 16px var(--container-padding);
             z-index: 1000;
-            backdrop-filter: blur(20px) saturate(180%);
-            background: rgba(10, 6, 21, 0.85);
+            backdrop-filter: blur(20px);
+            background: rgba(10, 6, 21, 0.7);
             border-bottom: 1px solid var(--glass-border);
-            transition: var(--transition-slow);
-            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
         }
-
         .main-nav.scrolled {
             padding: 10px var(--container-padding);
             background: rgba(10, 6, 21, 0.95);
-            border-bottom: 1px solid rgba(138, 43, 226, 0.3);
+            border-bottom-color: rgba(168, 85, 247, 0.5);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
         }
-
         .nav-container {
             max-width: 1600px;
             margin: 0 auto;
@@ -253,2060 +255,879 @@
             align-items: center;
             gap: 2rem;
         }
-
         .nav-logo-container {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             text-decoration: none;
         }
-
         .nav-logo-img {
-            height: 45px;
+            height: 50px;
             width: auto;
             border-radius: 12px;
-            transition: var(--transition-slow);
-            filter: drop-shadow(0 5px 15px rgba(138, 43, 226, 0.4));
+            filter: drop-shadow(0 4px 12px rgba(168, 85, 247, 0.4));
+            transition: transform 0.2s;
         }
-
         .nav-logo-img:hover {
-            transform: rotate(5deg) scale(1.05);
-            filter: drop-shadow(0 8px 25px rgba(138, 43, 226, 0.6));
+            transform: rotate(3deg) scale(1.02);
         }
-
         .nav-logo {
             font-family: 'Bagel Fat One', cursive;
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             background: var(--gradient-primary);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-decoration: none;
-            letter-spacing: 1px;
         }
-
         .nav-links {
             display: flex;
-            gap: 2.5rem;
+            gap: 2rem;
             list-style: none;
             align-items: center;
         }
-
         .nav-links a {
             color: var(--text-secondary);
             text-decoration: none;
             font-weight: 600;
-            transition: all 0.3s var(--transition-smooth);
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
             position: relative;
-            padding: 8px 0;
-            font-size: 1.05rem;
         }
-
         .nav-links a::before {
             content: '';
             position: absolute;
-            bottom: 0;
+            bottom: -5px;
             left: 0;
             width: 0;
             height: 2px;
             background: var(--gradient-primary);
-            transition: width 0.4s var(--transition-smooth);
-            border-radius: 1px;
+            transition: width 0.3s;
         }
-
-        .nav-links a:hover {
-            color: var(--text-primary);
-        }
-
         .nav-links a:hover::before {
             width: 100%;
         }
-
-        /* === HERO SECTION === */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-            padding-top: 100px;
-            text-align: center;
+        .menu-toggle {
+            display: none;
+            font-size: 1.8rem;
+            color: white;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+        @media (max-width: 820px) {
+            .menu-toggle {
+                display: block;
+            }
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: rgba(10, 6, 21, 0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                justify-content: center;
+                gap: 2.5rem;
+                transition: left 0.4s;
+                z-index: 999;
+            }
+            .nav-links.active {
+                left: 0;
+            }
+            .nav-links a {
+                font-size: 1.3rem;
+            }
         }
 
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 900px;
-            text-align: center;
-            margin: 0 auto;
-            padding: 40px 0;
-            width: 100%;
-        }
-
-        .hero-logo {
-            width: 180px;
-            height: auto;
-            margin: 0 auto 40px auto;
-            border-radius: 25px;
-            filter: drop-shadow(0 15px 35px rgba(138, 43, 226, 0.4));
-            animation: float 6s ease-in-out infinite;
-            transition: var(--transition-slow);
-            display: block;
-        }
-
-        .hero-logo:hover {
-            transform: scale(1.05);
-            filter: drop-shadow(0 20px 45px rgba(138, 43, 226, 0.6));
-        }
-
-        .hero-subtitle {
-            font-size: 1.4rem;
-            color: var(--text-secondary);
-            margin-bottom: 3rem;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-
-        .hero-cta {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .floating-elements {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .floating-element {
-            position: absolute;
-            border-radius: 50%;
-            background: var(--gradient-primary);
-            opacity: 0.15;
-            filter: blur(60px);
-            animation: float 25s infinite var(--transition-smooth);
-        }
-
-        .floating-element:nth-child(1) {
-            width: 400px;
-            height: 400px;
-            top: 10%;
-            left: 5%;
-            animation-delay: 0s;
-        }
-
-        .floating-element:nth-child(2) {
-            width: 300px;
-            height: 300px;
-            top: 60%;
-            right: 10%;
-            animation-delay: -8s;
-        }
-
-        .floating-element:nth-child(3) {
-            width: 250px;
-            height: 250px;
-            bottom: 20%;
-            left: 15%;
-            animation-delay: -15s;
-        }
-
-        /* === BUTTONS === */
+        /* buttons */
         .btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 18px 42px;
+            padding: 12px 32px;
             border-radius: var(--radius-lg);
             font-weight: 700;
             text-decoration: none;
-            transition: var(--transition-slow);
-            position: relative;
-            overflow: hidden;
-            border: none;
-            cursor: pointer;
-            font-family: 'Space Grotesk', sans-serif;
-            white-space: nowrap;
-            letter-spacing: 0.5px;
-            font-size: 1.1rem;
+            transition: all 0.3s var(--transition-bounce);
             gap: 10px;
+            font-size: 1rem;
+            cursor: pointer;
         }
-
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: left 0.7s var(--transition-smooth);
-        }
-
-        .btn:hover::before {
-            left: 100%;
-        }
-
         .btn-primary {
             background: var(--gradient-primary);
             color: white;
-            box-shadow: var(--shadow-xl);
-            border: 2px solid transparent;
+            box-shadow: 0 10px 25px -5px rgba(168, 85, 247, 0.5);
         }
-
         .btn-primary:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 25px 50px rgba(138, 43, 226, 0.4);
-            border: 2px solid rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 20px 40px rgba(168, 85, 247, 0.5);
         }
-
         .btn-secondary {
-            background: var(--glass-bg);
-            color: var(--text-primary);
-            backdrop-filter: blur(20px);
-            border: 2px solid var(--glass-border);
-            box-shadow: var(--shadow-lg);
+            background: rgba(255,255,255,0.06);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(168, 85, 247, 0.4);
         }
-
         .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: translateY(-5px);
-            border-color: rgba(138, 43, 226, 0.5);
+            background: rgba(168, 85, 247, 0.2);
+            transform: translateY(-3px);
         }
 
-        /* === SECTIONS === */
-        .section-header {
-            text-align: center;
-            margin-bottom: 5rem;
+        /* hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 90px;
             position: relative;
-            width: 100%;
         }
-
-        .section-header h2 {
-            display: block;
-            position: relative;
-            padding-bottom: 20px;
+        .hero-content {
+            max-width: 950px;
             margin: 0 auto;
+            text-align: center;
+            animation: fadeInUp 0.8s ease;
+        }
+        .hero-logo {
+            width: 140px;
+            margin-bottom: 30px;
+            border-radius: 30px;
+            filter: drop-shadow(0 20px 35px rgba(168, 85, 247, 0.5));
+            transition: transform 0.3s;
+        }
+        .hero-logo:hover {
+            transform: scale(1.04);
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        .section-header h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: var(--gradient-primary);
-            border-radius: 2px;
-        }
-
-        /* === GALLERY SECTION === */
-        .gallery-section {
-            position: relative;
-        }
-
+        /* gallery grid enhanced */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 2.5rem;
-            margin-bottom: 4rem;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.8rem;
+        }
+        /* Banners: force 2-per-row layout and 16:9 frames */
+        #stream-assets .gallery-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.75rem;
         }
 
+        /* Make individual banner frames 16:9 */
+        #stream-assets .gallery-item {
+            aspect-ratio: 16/9;
+            min-height: 0; /* allow grid sizing to control height */
+        }
+
+        /* Responsive: stack to single column on smaller screens */
+        @media (max-width: 820px) {
+            #stream-assets .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            #stream-assets .gallery-item {
+                aspect-ratio: auto;
+            }
+        }
         .gallery-item {
             position: relative;
             border-radius: var(--radius-md);
             overflow: hidden;
             aspect-ratio: 4/3;
             background: var(--glass-bg);
-            backdrop-filter: blur(20px);
+            backdrop-filter: blur(4px);
             border: 1px solid var(--glass-border);
-            transition: var(--transition-slow);
-            transform-style: preserve-3d;
-            perspective: 1000px;
+            transition: all 0.4s var(--transition-smooth);
             cursor: pointer;
-            box-shadow: var(--shadow-lg);
         }
-
-        .gallery-item::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: var(--gradient-primary);
-            opacity: 0;
-            transition: opacity 0.4s var(--transition-smooth);
-            z-index: 1;
-        }
-
         .gallery-item:hover {
-            transform: translateY(-15px) rotateX(5deg) rotateY(5deg) scale(1.03);
+            transform: translateY(-10px) scale(1.02);
             box-shadow: var(--shadow-xl), var(--shadow-neon);
-            border-color: rgba(138, 43, 226, 0.5);
+            border-color: var(--glass-border-hover);
         }
-
-        .gallery-item:hover::before {
-            opacity: 0.2;
-        }
-
         .gallery-image {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 1s var(--transition-smooth);
+            transition: transform 0.7s;
         }
-
         .gallery-item:hover .gallery-image {
-            transform: scale(1.15);
+            transform: scale(1.08);
+        }
+        /* Ensure banners keep 16:9 when other rules appear later - place override here */
+        #stream-assets .gallery-item {
+            aspect-ratio: 16/9 !important;
+        }
+        /* Tournaments: use the same 2-per-row + 16:9 banner styling so items remain tidy */
+        #tournaments .gallery-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.75rem;
+        }
+        #tournaments .gallery-item {
+            aspect-ratio: 16/9 !important;
+            min-height: 0;
         }
 
+        /* Responsive: single column on smaller screens */
+        @media (max-width: 820px) {
+            #tournaments .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            #tournaments .gallery-item {
+                aspect-ratio: auto !important;
+            }
+        }
         .gallery-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.85) 0%, transparent 50%);
+            background: linear-gradient(0deg, rgba(0,0,0,0.85) 0%, transparent 60%);
             display: flex;
             align-items: flex-end;
-            padding: 2.5rem;
+            padding: 1.5rem;
             opacity: 0;
-            transition: opacity 0.4s var(--transition-smooth);
-            z-index: 2;
+            transition: opacity 0.3s;
         }
-
         .gallery-item:hover .gallery-overlay {
             opacity: 1;
         }
-
         .gallery-title {
             color: white;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 700;
-            transform: translateY(30px);
-            transition: transform 0.5s var(--transition-smooth);
-            text-align: left;
+            transform: translateY(20px);
+            transition: transform 0.4s;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.3);
         }
-
         .gallery-item:hover .gallery-title {
             transform: translateY(0);
         }
 
-        /* === TOURNAMENT LAYOUT === */
-        .tournament-section {
-            background: var(--gradient-dark);
-            position: relative;
+        /* skins list premium */
+        .skins-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .skin-item {
+            display: flex;
+            gap: 1.8rem;
+            align-items: center;
+            padding: 20px 28px;
+            border-radius: var(--radius-md);
+            background: rgba(255,255,255,0.02);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            transition: all 0.3s;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .skin-item:hover {
+            transform: translateY(-6px);
+            background: rgba(255,255,255,0.06);
+            border-color: rgba(168,85,247,0.5);
+            box-shadow: var(--shadow-glow);
+        }
+        .skin-thumb {
+            width: 260px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: transform 0.3s;
+        }
+        .skin-item:hover .skin-thumb {
+            transform: scale(1.02);
+        }
+        .skin-title {
+            font-family: 'Bagel Fat One', cursive;
+            font-size: 1.4rem;
+            margin: 0 0 6px 0;
+            text-align: left;
+            background: none;
+            -webkit-text-fill-color: white;
+        }
+        .skin-desc {
+            text-align: left;
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--text-tertiary);
+        }
+        @media (max-width: 820px) {
+            .skin-item { flex-direction: column; align-items: flex-start; }
+            .skin-thumb { width: 100%; height: auto; }
         }
 
-        .tournament-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: var(--gradient-primary);
-            opacity: 0.3;
-        }
-
+        /* tournament columns */
         .columns-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 5rem;
-            margin-top: 4rem;
+            gap: 2.5rem;
         }
-
         .year-section {
-            margin-bottom: 5rem;
+            margin-bottom: 2.5rem;
         }
-
         .year-header {
             display: flex;
             align-items: center;
-            gap: 1.5rem;
-            margin-bottom: 2.5rem;
-            padding-bottom: 15px;
-            border-bottom: 2px solid rgba(138, 43, 226, 0.3);
+            gap: 1rem;
+            margin-bottom: 1.8rem;
+            border-left: 4px solid var(--accent-purple);
+            padding-left: 1.2rem;
         }
-
         .year-header h3 {
-            margin-bottom: 0;
-            font-size: 2.2rem;
+            margin: 0;
+            font-size: 1.7rem;
             text-align: left;
+            background: none;
+            -webkit-text-fill-color: white;
+            letter-spacing: -0.01em;
+        }
+        @media (max-width: 1024px) {
+            .columns-container { grid-template-columns: 1fr; gap: 2rem; }
         }
 
-        /* === COMING SOON === */
+        /* coming soon */
         .coming-soon {
             text-align: center;
-            padding: 8rem 0;
-            background: var(--gradient-dark);
-            position: relative;
-            overflow: hidden;
+            padding: 5rem 0;
+            background: radial-gradient(ellipse at center, rgba(168,85,247,0.08) 0%, transparent 70%);
+            margin: 2rem 0;
         }
-
-        .coming-soon::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: var(--gradient-glow);
-            animation: pulse 4s ease-in-out infinite;
-        }
-
         .coming-soon h2 {
-            font-size: clamp(2.5rem, 8vw, 5rem);
-            margin-bottom: 1.5rem;
-            color: var(--accent-gold);
-            position: relative;
-            z-index: 2;
-        }
-
-        /* === ABOUT SECTION === */
-        .about-section {
-            background: var(--gradient-dark);
-            position: relative;
-            text-align: center;
-        }
-
-        .about-content {
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 2.5rem;
-            margin-top: 5rem;
-        }
-
-        .stat-item {
-            text-align: center;
-            padding: 2.5rem;
-            background: var(--glass-bg);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--glass-border);
-            border-radius: var(--radius-md);
-            transition: var(--transition-slow);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .stat-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: var(--gradient-primary);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.6s var(--transition-smooth);
-        }
-
-        .stat-item:hover {
-            transform: translateY(-10px);
-            border-color: var(--accent-purple);
-            box-shadow: var(--shadow-xl);
-        }
-
-        .stat-item:hover::before {
-            transform: scaleX(1);
-        }
-
-        .stat-number {
-            font-size: 3.5rem;
-            font-weight: 800;
-            background: var(--gradient-primary);
+            font-size: clamp(2.5rem, 7vw, 4rem);
+            background: linear-gradient(135deg, #fbbf24, #f43f5e);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 0.75rem;
-            line-height: 1;
-            text-align: center;
+            margin-bottom: 0.5rem;
         }
 
-        .stat-label {
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            font-weight: 600;
+        /* footer */
+        .footer {
+            background: rgba(10, 6, 21, 0.95);
+            backdrop-filter: blur(12px);
+            border-top: 1px solid rgba(168, 85, 247, 0.3);
+            padding: 3rem 0 2rem;
             text-align: center;
+            margin-top: 2rem;
+        }
+        .footer-logo-img {
+            height: 50px;
+            width: auto;
+            border-radius: 12px;
+            margin-right: 12px;
+            vertical-align: middle;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            margin: 1.8rem 0;
+        }
+        .social-link {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(168,85,247,0.4);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 0.3s;
+            font-size: 1.3rem;
+        }
+        .social-link:hover {
+            transform: translateY(-5px) scale(1.1);
+            background: var(--gradient-primary);
+            border-color: transparent;
+        }
+        .osu-icon {
+            width: 24px;
+            height: 24px;
+        }
+        .copyright {
+            font-size: 0.85rem;
+            color: var(--text-tertiary);
         }
 
-        /* === IMAGE PREVIEW OVERLAY === */
+        /* back to top */
+        .back-to-top {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.4rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            border: none;
+            z-index: 99;
+            box-shadow: 0 4px 15px rgba(168,85,247,0.4);
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        .back-to-top:hover {
+            transform: translateY(-5px) scale(1.05);
+        }
+
+        /* scroll animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1), transform 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+        }
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .stagger-delay-1 { transition-delay: 0.05s; }
+        .stagger-delay-2 { transition-delay: 0.1s; }
+        .stagger-delay-3 { transition-delay: 0.15s; }
+        .stagger-delay-4 { transition-delay: 0.2s; }
+        .stagger-delay-5 { transition-delay: 0.25s; }
+
+        /* image preview overlay premium */
         .image-preview-overlay {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.95);
-            backdrop-filter: blur(30px);
+            background: rgba(0, 0, 0, 0.96);
+            backdrop-filter: blur(40px);
             display: none;
             justify-content: center;
             align-items: center;
-            z-index: var(--preview-z-index);
-            opacity: 0;
-            transition: opacity 0.3s var(--transition-smooth);
-            padding: 0;
+            z-index: 10000;
         }
-
         .image-preview-overlay.active {
             display: flex;
-            opacity: 1;
+            animation: fadeIn 0.2s ease;
         }
-
-        .image-preview-container {
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
-
         .image-preview {
-            max-width: min(1800px, 98vw);
-            max-height: 95vh;
-            width: auto;
-            height: auto;
-            object-fit: contain;
-            border-radius: var(--radius-md);
-            box-shadow: 0 30px 120px rgba(0, 0, 0, 0.9);
-            animation: zoomIn 0.3s var(--transition-smooth);
-            border: 3px solid rgba(255, 255, 255, 0.1);
-            background: rgba(0, 0, 0, 0.3);
+            max-width: 90vw;
+            max-height: 85vh;
+            border-radius: 32px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+            border: 2px solid rgba(255,255,255,0.2);
         }
-
-        .preview-close {
+        .preview-close, .preview-nav {
             position: fixed;
-            top: 25px;
-            right: 25px;
-            background: var(--gradient-primary);
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
             color: white;
-            border: none;
-            width: 60px;
-            height: 60px;
+            width: 48px;
+            height: 48px;
             border-radius: 50%;
-            font-size: 1.8rem;
+            font-size: 1.3rem;
             cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: var(--transition-slow);
-            box-shadow: var(--shadow-xl);
-            z-index: 10001;
+            transition: 0.2s;
         }
-
-        .preview-close:hover {
-            transform: rotate(90deg) scale(1.15);
-            background: var(--accent-pink);
-            box-shadow: 0 0 30px rgba(255, 107, 139, 0.6);
-        }
-
-        .preview-nav {
-            position: fixed;
-            top: 50%;
-            transform: translateY(-50%);
-            background: var(--glass-bg);
-            color: white;
-            border: 2px solid var(--glass-border);
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            font-size: 1.8rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: var(--transition-slow);
-            backdrop-filter: blur(20px);
-            z-index: 10001;
-            opacity: 0.8;
-        }
-
-        .preview-nav:hover {
+        .preview-close { top: 20px; right: 20px; }
+        .preview-prev { left: 20px; top: 50%; transform: translateY(-50%); }
+        .preview-next { right: 20px; top: 50%; transform: translateY(-50%); }
+        .preview-close:hover, .preview-nav:hover {
             background: var(--gradient-primary);
-            transform: translateY(-50%) scale(1.15);
-            opacity: 1;
-            border-color: rgba(138, 43, 226, 0.5);
+            transform: scale(1.05);
         }
-
-        .preview-prev {
-            left: 30px;
-        }
-
-        .preview-next {
-            right: 30px;
-        }
-
         .preview-info {
             position: fixed;
-            bottom: 30px;
+            bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
-            text-align: center;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(8px);
+            padding: 8px 20px;
+            border-radius: 40px;
             color: white;
-            font-size: 1.3rem;
-            font-weight: 700;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 15px 30px;
-            border-radius: var(--radius-lg);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            max-width: 80%;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        /* Image optimization for preview */
-        .image-preview-container img {
-            cursor: zoom-out;
-        }
-        
-        .image-preview-container img.zoomable {
-            cursor: zoom-in;
-            transition: transform 0.3s ease;
-        }
-        
-        .image-preview-container img.zoomable.zoomed {
-            transform: scale(1.5);
-            cursor: zoom-out;
-        }
-
-        @media (min-width: 1200px) {
-            .image-preview-container {
-                padding: 40px;
-            }
-
-            .image-preview {
-                    max-width: min(1600px, 98vw);
-                    max-height: 92vh;
-                }
-
-                .image-preview-container img.zoomable.zoomed {
-                    transform: scale(2);
-                }
-        }
-
-        /* === FOOTER === */
-        .footer {
-            background: var(--secondary-dark);
-            padding: 5rem 0 3rem;
-            border-top: 1px solid var(--glass-border);
-            position: relative;
-            text-align: center;
-        }
-
-        .footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: var(--gradient-primary);
-            opacity: 0.5;
-        }
-
-        .footer-content {
-            text-align: center;
-        }
-
-        .footer-logo {
-            display: inline-flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 3rem;
-            text-decoration: none;
-            justify-content: center;
-        }
-
-        .footer-logo-img {
-            height: 50px;
-            width: auto;
-            border-radius: 12px;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin: 2.5rem 0;
-        }
-
-        .social-link {
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            background: var(--glass-bg);
-            border: 2px solid var(--glass-border);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: var(--transition-slow);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .social-link::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: var(--gradient-primary);
-            opacity: 0;
-            transition: opacity 0.3s var(--transition-smooth);
-        }
-
-        .social-link:hover {
-            transform: translateY(-5px) scale(1.1);
-            border-color: var(--accent-purple);
-        }
-
-        .social-link:hover::before {
-            opacity: 1;
-        }
-
-        .social-link i {
-            position: relative;
-            z-index: 1;
-        }
-
-        .social-link:hover i {
-            color: white;
-        }
-
-        .copyright {
-            color: var(--text-tertiary);
-            font-size: 1rem;
-            line-height: 1.6;
-            text-align: center;
-        }
-
-        /* === ANIMATIONS === */
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0) rotate(0deg);
-            }
-            33% {
-                transform: translateY(-30px) rotate(120deg);
-            }
-            66% {
-                transform: translateY(20px) rotate(240deg);
-            }
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                opacity: 0.5;
-            }
-            50% {
-                opacity: 0.8;
-            }
-        }
-
-        @keyframes zoomIn {
-            from {
-                opacity: 0;
-                transform: scale(0.9);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(40px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: opacity 0.8s var(--transition-smooth), transform 0.8s var(--transition-smooth);
-        }
-
-        .animate-on-scroll.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .stagger-delay-1 { transition-delay: 0.1s; }
-        .stagger-delay-2 { transition-delay: 0.2s; }
-        .stagger-delay-3 { transition-delay: 0.3s; }
-        .stagger-delay-4 { transition-delay: 0.4s; }
-        .stagger-delay-5 { transition-delay: 0.5s; }
-
-        /* === CUSTOM SCROLLBAR === */
-        ::-webkit-scrollbar {
-            width: 12px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: var(--secondary-dark);
-            border-radius: 10px;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: var(--gradient-primary);
-            border-radius: 10px;
-            border: 2px solid var(--secondary-dark);
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: linear-gradient(135deg, #9b4dff 0%, #ff7ba3 50%, #5ca0ff 100%);
-        }
-
-        /* === RESPONSIVE DESIGN === */
-        @media (max-width: 1200px) {
-            :root {
-                --section-spacing: 100px;
-                --container-padding: clamp(20px, 4vw, 60px);
-            }
-            
-            .gallery-grid {
-                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-                gap: 2rem;
-            }
-            
-            .preview-prev {
-                left: 20px;
-            }
-            
-            .preview-next {
-                right: 20px;
-            }
-            
-            .image-preview {
-                max-width: 92vw;
-                max-height: 92vh;
-            }
-        }
-
-        @media (max-width: 1024px) {
-            .columns-container {
-                grid-template-columns: 1fr;
-                gap: 4rem;
-            }
-            
-            .gallery-grid {
-                grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-                gap: 1.75rem;
-            }
-            
-            .preview-nav {
-                width: 60px;
-                height: 60px;
-                font-size: 1.5rem;
-            }
-            
-            .preview-prev {
-                left: 15px;
-            }
-            
-            .preview-next {
-                right: 15px;
-            }
-            
-            .preview-close {
-                width: 55px;
-                height: 55px;
-                font-size: 1.5rem;
-                top: 20px;
-                right: 20px;
-            }
-            
-            .image-preview {
-                max-width: 90vw;
-                max-height: 90vh;
-            }
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
         }
 
         @media (max-width: 768px) {
-            :root {
-                --section-spacing: 80px;
-                --container-padding: 20px;
-            }
-
-            h1 {
-                font-size: clamp(2.5rem, 10vw, 3.5rem);
-            }
-
-            h2 {
-                font-size: clamp(2rem, 6vw, 2.8rem);
-            }
-
-            .nav-links {
-                display: none;
-            }
-            
-            .nav-logo-img {
-                height: 35px;
-            }
-            
-            .nav-logo {
-                font-size: 1.8rem;
-            }
-
-            .gallery-grid {
-                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-                gap: 1.5rem;
-            }
-
-            .hero-cta {
-                flex-direction: column;
-                align-items: center;
-                gap: 1.25rem;
-            }
-            
-            .btn {
-                width: 100%;
-                max-width: 300px;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 1.5rem;
-            }
-            
-            .stat-number {
-                font-size: 2.8rem;
-            }
-            
-            .hero-logo {
-                width: 140px;
-            }
-            
-            .preview-nav {
-                width: 50px;
-                height: 50px;
-                font-size: 1.3rem;
-            }
-            
-            .preview-prev {
-                left: 10px;
-            }
-            
-            .preview-next {
-                right: 10px;
-            }
-            
-            .preview-close {
-                width: 50px;
-                height: 50px;
-                font-size: 1.3rem;
-                top: 15px;
-                right: 15px;
-            }
-            
-            .preview-info {
-                font-size: 1.1rem;
-                padding: 12px 24px;
-                bottom: 20px;
-            }
-            
-            .image-preview {
-                max-width: 95vw;
-                max-height: 85vh;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 2.8rem;
-            }
-
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .btn {
-                padding: 16px 24px;
-                font-size: 1rem;
-            }
-            
-            .preview-nav {
-                width: 45px;
-                height: 45px;
-                font-size: 1.2rem;
-            }
-            
-            .preview-close {
-                width: 45px;
-                height: 45px;
-                font-size: 1.2rem;
-                top: 10px;
-                right: 10px;
-            }
-            
-            .preview-info {
-                font-size: 1rem;
-                padding: 10px 20px;
-                bottom: 15px;
-                max-width: 90%;
-            }
-            
-            .image-preview {
-                max-width: 98vw;
-                max-height: 80vh;
-            }
-        }
-        
-        /* Extra small devices */
-        @media (max-width: 360px) {
-            .preview-nav {
-                width: 40px;
-                height: 40px;
-                font-size: 1rem;
-            }
-            
-            .preview-close {
-                width: 40px;
-                height: 40px;
-                font-size: 1rem;
-            }
-            
-            .image-preview {
-                max-width: 99vw;
-                max-height: 75vh;
-            }
+            .gallery-grid { gap: 1.2rem; }
+            .hero-logo { width: 100px; }
+            .preview-close, .preview-nav { width: 40px; height: 40px; font-size: 1rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Image Preview Overlay -->
     <div class="image-preview-overlay" id="imagePreview">
-        <div class="image-preview-container">
-            <button class="preview-close" id="closePreview">
-                <i class="fas fa-times"></i>
-            </button>
-            <button class="preview-nav preview-prev" id="prevImage">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <img class="image-preview zoomable" id="previewImage" src="" alt="Preview">
-            <button class="preview-nav preview-next" id="nextImage">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-            <div class="preview-info" id="previewInfo"></div>
-        </div>
+        <button class="preview-close" id="closePreview"><i class="fas fa-times"></i></button>
+        <button class="preview-nav preview-prev" id="prevImage"><i class="fas fa-chevron-left"></i></button>
+        <img class="image-preview" id="previewImage" alt="Preview">
+        <button class="preview-nav preview-next" id="nextImage"><i class="fas fa-chevron-right"></i></button>
+        <div class="preview-info" id="previewInfo"></div>
     </div>
 
-    <!-- Navigation -->
     <nav class="main-nav" id="mainNav">
         <div class="nav-container">
             <a href="#" class="nav-logo-container">
-                <img src="https://spooport.carrd.co/assets/images/image01.png?v=9f729f0a" 
-                     alt="Spoo Logo" 
-                     class="nav-logo-img">
-                <span class="nav-logo">Spoo</span>
+                <img src="https://spooport.carrd.co/assets/images/image01.png?v=9f729f0a" alt="Logo" class="nav-logo-img">
             </a>
-            <ul class="nav-links">
+            <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#hero"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#stream-assets"><i class="fas fa-broadcast-tower"></i> Stream Assets</a></li>
                 <li><a href="#osu-skins"><i class="fas fa-gamepad"></i> osu! Skins</a></li>
+                <li><a href="#stream-assets"><i class="fas fa-broadcast-tower"></i> Stream Assets</a></li>
                 <li><a href="#tournaments"><i class="fas fa-trophy"></i> Tournaments</a></li>
-                <li><a href="https://spoosenpai.carrd.co/" class="btn btn-secondary" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> Main Site
-                </a></li>
+                <li><a href="https://spoosenpai.xyz/" class="btn btn-secondary" target="_blank"><i class="fas fa-external-link-alt"></i> Main Site</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="hero" class="hero">
-        <div class="floating-elements">
-            <div class="floating-element"></div>
-            <div class="floating-element"></div>
-            <div class="floating-element"></div>
-        </div>
         <div class="container">
             <div class="hero-content">
-                <img src="https://spooport.carrd.co/assets/images/image01.png?v=9f729f0a" 
-                     alt="SpooSenpai Logo" 
-                     class="hero-logo">
-                <h1>SpooSenpai's<br> Portfolio</h1>
-                <p class="hero-subtitle">
-                    Hello! Welcome to my Portfolio. My works are stored in this side of my website. Have fun exploring!
-                </p>
-                <div class="hero-cta">
-                    <a href="#stream-assets" class="btn btn-primary">
-                        <i class="fas fa-eye"></i> View Assets
-                    </a>
+                <img src="https://spooport.carrd.co/assets/images/image01.png?v=9f729f0a" alt="Spoo Logo" class="hero-logo">
+                <h1>Spoo's<br> Portfolio</h1>
+                <p class="hero-subtitle">Hello! Welcome to my Portfolio. My works are stored in this side of my website. Have fun exploring!</p>
+                <div class="hero-cta" style="margin-top: 2rem;">
+                    <a href="#osu-skins" class="btn btn-primary"><i class="fas fa-eye"></i> View Assets</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stream Assets Section -->
-    <section id="stream-assets" class="gallery-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>◈ Stream Assets ◈</h2>
-                <p>Collection of overlays, alerts, and streaming elements for Twitch and YouTube</p>
-            </div>
-            
-            <div class="gallery-grid">
-                <!-- Stream Asset 1 -->
-                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/4d3571e0.jpg?v=9f729f0a" data-title="Stream Asset 1">
-                    <img src="https://spooport.carrd.co/assets/images/gallery01/4d3571e0.jpg?v=9f729f0a" 
-                         alt="Stream asset 1" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">Stream Asset 1</div>
-                    </div>
-                </div>
-                
-                <!-- Stream Asset 2 -->
-                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/7210ba91.jpg?v=9f729f0a" data-title="Stream Asset 2">
-                    <img src="https://spooport.carrd.co/assets/images/gallery01/7210ba91.jpg?v=9f729f0a" 
-                         alt="Stream asset 2" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">Stream Asset 2</div>
-                    </div>
-                </div>
-                
-                <!-- Stream Asset 3 -->
-                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/a429382c.jpg?v=9f729f0a" data-title="Stream Asset 3">
-                    <img src="https://spooport.carrd.co/assets/images/gallery01/a429382c.jpg?v=9f729f0a" 
-                         alt="Stream asset 3" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">Stream Asset 3</div>
-                    </div>
-                </div>
-                
-                <!-- Stream Asset 4 -->
-                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/f2ceab79.jpg?v=9f729f0a" data-title="Stream Asset 4">
-                    <img src="https://spooport.carrd.co/assets/images/gallery01/f2ceab79.jpg?v=9f729f0a" 
-                         alt="Stream asset 4" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">Stream Asset 4</div>
-                    </div>
-                </div>
-                
-                <!-- Stream Asset 5 -->
-                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/5c6c6bbf.jpg?v=9f729f0a" data-title="Stream Asset 5">
-                    <img src="https://spooport.carrd.co/assets/images/gallery01/5c6c6bbf.jpg?v=9f729f0a" 
-                         alt="Junpai's Banner" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">Junpai's Banner</div>
-                    </div>
-                </div>
-                
-                <!-- Stream Asset 6 -->
-                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/c7c88dc5.jpg?v=9f729f0a" data-title="Stream Asset 6">
-                    <img src="https://spooport.carrd.co/assets/images/gallery01/c7c88dc5.jpg?v=9f729f0a" 
-                         alt="Decay's banner" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">Decay's Banner</div>
-                    </div>
-                </div>
-                
-                <!-- Stream Asset 7 -->
-                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/2315491f.jpg?v=9f729f0a" data-title="Stream Asset 7">
-                    <img src="https://spooport.carrd.co/assets/images/gallery01/2315491f.jpg?v=9f729f0a" 
-                         alt="Gene's banner" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">Gene's Banner</div>
-                    </div>
-                </div>
-                
-                <!-- Stream Asset 8 -->
-                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/c616c983.jpg?v=9f729f0a" data-title="Stream Asset 8">
-                    <img src="https://spooport.carrd.co/assets/images/gallery01/c616c983.jpg?v=9f729f0a" 
-                         alt="Exactrial" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">Exactrial's banner</div>
-                    </div>
-                </div>
-                
-                <!-- Stream Asset 9 -->
-                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/354af913.jpg?v=9f729f0a" data-title="Stream Asset 9">
-                    <img src="https://spooport.carrd.co/assets/images/gallery01/354af913.jpg?v=9f729f0a" 
-                         alt="Arekk's banner" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">Arekk's banner</div>
-                    </div>
-                </div>
-                
-                <!-- Stream Asset 10 -->
-                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/ade286fe.jpg?v=9f729f0a" data-title="Stream Asset 10">
-                    <img src="https://spooport.carrd.co/assets/images/gallery01/ade286fe.jpg?v=9f729f0a" 
-                         alt="Magic" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">Magic's banner</div>
-                    </div>
-                </div>
-                
-                <!-- Stream Asset 11 -->
-                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/cbb72789.jpg?v=9f729f0a" data-title="Stream Asset 11">
-                    <img src="https://spooport.carrd.co/assets/images/gallery01/cbb72789.jpg?v=9f729f0a" 
-                         alt="Mommy" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">Mommy's banner</div>
-                    </div>
-                </div>
-                
-                <!-- Stream Asset 12 -->
-                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/d446c417.jpg?v=9f729f0a" data-title="Stream Asset 12">
-                    <img src="https://spooport.carrd.co/assets/images/gallery01/d446c417.jpg?v=9f729f0a" 
-                         alt="Prop" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">Prop's banner</div>
-                    </div>
-                </div>
-                
-                <!-- Stream Asset 13 -->
-                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/d78c3fad.jpg?v=9f729f0a" data-title="Stream Asset 13">
-                    <img src="https://spooport.carrd.co/assets/images/gallery01/d78c3fad.jpg?v=9f729f0a" 
-                         alt="Mortis" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">Mortis's banner</div>
-                    </div>
-                </div>
-                
-                <!-- Stream Asset 14 -->
-                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/d3996679.jpg?v=9f729f0a" data-title="Stream Asset 14">
-                    <img src="https://spooport.carrd.co/assets/images/gallery01/d3996679.jpg?v=9f729f0a" 
-                         alt="Wish" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">Wish's banner</div>
-                    </div>
-                </div>
-                
-                <!-- Stream Asset 15 -->
-                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/e2950245.jpg?v=9f729f0a" data-title="Stream Asset 15">
-                    <img src="https://spooport.carrd.co/assets/images/gallery01/e2950245.jpg?v=9f729f0a" 
-                         alt="Banner" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">Test Open Banner</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- osu! Skins Section -->
     <section id="osu-skins" class="gallery-section">
         <div class="container">
             <div class="section-header">
-                <h2>◉ osu! Skins ◉</h2>
-                <p>Custom skins for osu!</p>
+                <h2>◈ osu! Skins ◈</h2>
+                <p>Professional osu! skins — readable layouts, responsive elements, and handcrafted visuals for gameplay.</p>
             </div>
-            
-            <div class="gallery-grid">
-                <!-- FOOL MOON NIGHT / 칵스 -->
-                <a href="https://osu.ppy.sh/community/forums/topics/1775136?n=1" 
-                   class="gallery-item" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   data-image="https://spooport.carrd.co/assets/images/gallery03/926b7fb2.jpg?v=9f729f0a"
-                   data-title="FOOL MOON NIGHT / 칵스">
-                    <img src="https://spooport.carrd.co/assets/images/gallery03/926b7fb2.jpg?v=9f729f0a" 
-                         alt="FOOL MOON NIGHT / 칵스" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">FOOL MOON NIGHT / 칵스</div>
-                    </div>
+            <div class="skins-list">
+                <a href="https://osu.ppy.sh/community/forums/topics/2190460?n=1" class="skin-item" target="_blank" data-image="https://spooport.carrd.co/assets/images/gallery03/5f9a4b8f.jpg?v=9f729f0a" data-title="FREEDOM DiVE REiMAGINED">
+                    <img src="https://assets.ppy.sh/topic-covers/15313/ce298730d9b3cbc8580a4bf8ea76e02075bdb0db1ad8e0d0b6ab7c5fe5e04ce8.png" class="skin-thumb" loading="lazy" alt="skin preview">
+                    <div class="skin-meta"><h3 class="skin-title">The Climber</h3><p class="skin-desc">Short description — full description will be provided later.</p></div>
                 </a>
-                
-                <!-- FREEDOM DiVE REiMAGINED -->
-                <a href="https://osu.ppy.sh/community/forums/topics/2019099?n=1" 
-                   class="gallery-item" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   data-image="https://spooport.carrd.co/assets/images/gallery03/5f9a4b8f.jpg?v=9f729f0a"
-                   data-title="FREEDOM DiVE REiMAGINED">
-                    <img src="https://spooport.carrd.co/assets/images/gallery03/5f9a4b8f.jpg?v=9f729f0a" 
-                         alt="FREEDOM DiVE REiMAGINED" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">FREEDOM DiVE REiMAGINED</div>
-                    </div>
+                <a href="https://osu.ppy.sh/community/forums/topics/2149060?n=1" class="skin-item" target="_blank" data-image="https://spooport.carrd.co/assets/images/gallery03/5f9a4b8f.jpg?v=9f729f0a" data-title="FREEDOM DiVE REiMAGINED">
+                    <img src="https://assets.ppy.sh/topic-covers/15314/5e0220e165e2e05c111d938defc4eb3d4c88579586c192878dbfc8c7674df8ad.png" class="skin-thumb" loading="lazy" alt="skin preview">
+                    <div class="skin-meta"><h3 class="skin-title">{S} OFF SCRIPT</h3><p class="skin-desc">Short description — full description will be provided later.</p></div>
                 </a>
-                
-                <!-- FOOL MOON NIGHT 2.0 -->
-                <a href="https://osu.ppy.sh/community/forums/topics/1885740?n=1" 
-                   class="gallery-item" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   data-image="https://spooport.carrd.co/assets/images/gallery03/4b0f8c3d.jpg?v=9f729f0a"
-                   data-title="FOOL MOON NIGHT 2.0">
-                    <img src="https://spooport.carrd.co/assets/images/gallery03/4b0f8c3d.jpg?v=9f729f0a" 
-                         alt="FOOL MOON NIGHT 2.0" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">FOOL MOON NIGHT 2.0</div>
-                    </div>
+                <a href="https://osu.ppy.sh/community/forums/topics/2019099?n=1" class="skin-item" target="_blank" data-image="https://spooport.carrd.co/assets/images/gallery03/5f9a4b8f.jpg?v=9f729f0a" data-title="FREEDOM DiVE REiMAGINED">
+                    <img src="https://spooport.carrd.co/assets/images/gallery03/5f9a4b8f.jpg?v=9f729f0a" class="skin-thumb" loading="lazy" alt="skin preview">
+                    <div class="skin-meta"><h3 class="skin-title">FREEDOM DiVE REiMAGINED</h3><p class="skin-desc">Short description — full description will be provided later.</p></div>
                 </a>
-                
-                <!-- Fairy Bread Bakeoff! -->
-                <a href="https://osu.ppy.sh/community/forums/topics/1974074?n=1" 
-                   class="gallery-item" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   data-image="https://spooport.carrd.co/assets/images/gallery03/819cc127.jpg?v=9f729f0a"
-                   data-title="Fairy Bread Bakeoff!">
-                    <img src="https://spooport.carrd.co/assets/images/gallery03/819cc127.jpg?v=9f729f0a" 
-                         alt="Fairy Bread Bakeoff!" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">Fairy Bread Bakeoff!</div>
-                    </div>
+
+                <a href="https://osu.ppy.sh/community/forums/topics/1974074?n=1" class="skin-item" target="_blank" data-image="https://spooport.carrd.co/assets/images/gallery03/819cc127.jpg?v=9f729f0a" data-title="Fairy Bread Bakeoff!">
+                    <img src="https://spooport.carrd.co/assets/images/gallery03/819cc127.jpg?v=9f729f0a" class="skin-thumb" loading="lazy" alt="skin preview">
+                    <div class="skin-meta"><h3 class="skin-title">Fairy Bread Bakeoff!</h3><p class="skin-desc">Short description — full description will be provided later.</p></div>
                 </a>
-                
-                <!-- 5WC 2023 -->
-                <a href="https://osu.ppy.sh/community/forums/topics/1699533?n=1" 
-                   class="gallery-item" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   data-image="https://spooport.carrd.co/assets/images/gallery03/c30fe0ca.jpg?v=9f729f0a"
-                   data-title="5WC 2023">
-                    <img src="https://spooport.carrd.co/assets/images/gallery03/c30fe0ca.jpg?v=9f729f0a" 
-                         alt="5WC 2023" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">5WC 2023</div>
-                    </div>
+                <a href="https://osu.ppy.sh/community/forums/topics/1885740?n=1" class="skin-item" target="_blank" data-image="https://spooport.carrd.co/assets/images/gallery03/4b0f8c3d.jpg?v=9f729f0a" data-title="FOOL MOON NIGHT 2.0">
+                    <img src="https://spooport.carrd.co/assets/images/gallery03/4b0f8c3d.jpg?v=9f729f0a" class="skin-thumb" loading="lazy" alt="skin preview">
+                    <div class="skin-meta"><h3 class="skin-title">FOOL MOON NIGHT 2.0</h3><p class="skin-desc">Short description — full description will be provided later.</p></div>
+                </a>                
+                <a href="https://osu.ppy.sh/community/forums/topics/1775136?n=1" class="skin-item" target="_blank" data-image="https://spooport.carrd.co/assets/images/gallery03/926b7fb2.jpg?v=9f729f0a" data-title="FOOL MOON NIGHT / 칵스">
+                    <img src="https://spooport.carrd.co/assets/images/gallery03/926b7fb2.jpg?v=9f729f0a" class="skin-thumb" loading="lazy" alt="skin preview">
+                    <div class="skin-meta"><h3 class="skin-title">FOOL MOON NIGHT / 칵스</h3><p class="skin-desc">Short description — full description will be provided later.</p></div>
                 </a>
-                
-                <!-- Crystalized -->
-                <a href="https://osu.ppy.sh/community/forums/topics/1628271?n=1" 
-                   class="gallery-item" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   data-image="https://spooport.carrd.co/assets/images/gallery03/3ccfc9fa.jpg?v=9f729f0a"
-                   data-title="Crystalized">
-                    <img src="https://spooport.carrd.co/assets/images/gallery03/3ccfc9fa.jpg?v=9f729f0a" 
-                         alt="Crystalized" 
-                         class="gallery-image"
-                         loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="gallery-title">Crystalized</div>
-                    </div>
+                <a href="https://osu.ppy.sh/community/forums/topics/1699533?n=1" class="skin-item" target="_blank" data-image="https://spooport.carrd.co/assets/images/gallery03/c30fe0ca.jpg?v=9f729f0a" data-title="5WC 2023">
+                    <img src="https://spooport.carrd.co/assets/images/gallery03/c30fe0ca.jpg?v=9f729f0a" class="skin-thumb" loading="lazy" alt="skin preview">
+                    <div class="skin-meta"><h3 class="skin-title">5WC 2023</h3><p class="skin-desc">Short description — full description will be provided later.</p></div>
+                </a>
+                <a href="https://osu.ppy.sh/community/forums/topics/1628271?n=1" class="skin-item" target="_blank" data-image="https://spooport.carrd.co/assets/images/gallery03/3ccfc9fa.jpg?v=9f729f0a" data-title="Crystalized">
+                    <img src="https://spooport.carrd.co/assets/images/gallery03/3ccfc9fa.jpg?v=9f729f0a" class="skin-thumb" loading="lazy" alt="skin preview">
+                    <div class="skin-meta"><h3 class="skin-title">Crystalized</h3><p class="skin-desc">Short description — full description will be provided later.</p></div>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Tournament Section -->
+    <section id="stream-assets" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>◈ Banners ◈</h2>
+                <p>Bold, clean banners and headers crafted for stream branding — perfect for Twitch, YouTube, and socials.</p>
+            </div>
+            <div class="gallery-grid" id="bannersGrid">
+                <!-- 15 banner items exactly as original -->
+                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/4d3571e0.jpg?v=9f729f0a" data-title="Stream Asset 1"><img src="https://spooport.carrd.co/assets/images/gallery01/4d3571e0.jpg?v=9f729f0a" class="gallery-image" loading="lazy" alt="banner"><div class="gallery-overlay"><div class="gallery-title">Stream Asset 1</div></div></div>
+                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/7210ba91.jpg?v=9f729f0a" data-title="Stream Asset 2"><img src="https://spooport.carrd.co/assets/images/gallery01/7210ba91.jpg?v=9f729f0a" class="gallery-image" loading="lazy" alt="banner"><div class="gallery-overlay"><div class="gallery-title">Stream Asset 2</div></div></div>
+                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/a429382c.jpg?v=9f729f0a" data-title="Stream Asset 3"><img src="https://spooport.carrd.co/assets/images/gallery01/a429382c.jpg?v=9f729f0a" class="gallery-image" loading="lazy" alt="banner"><div class="gallery-overlay"><div class="gallery-title">Stream Asset 3</div></div></div>
+                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/f2ceab79.jpg?v=9f729f0a" data-title="Stream Asset 4"><img src="https://spooport.carrd.co/assets/images/gallery01/f2ceab79.jpg?v=9f729f0a" class="gallery-image" loading="lazy" alt="banner"><div class="gallery-overlay"><div class="gallery-title">Stream Asset 4</div></div></div>
+                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/5c6c6bbf.jpg?v=9f729f0a" data-title="Junpai's Banner"><img src="https://spooport.carrd.co/assets/images/gallery01/5c6c6bbf.jpg?v=9f729f0a" class="gallery-image" loading="lazy" alt="banner"><div class="gallery-overlay"><div class="gallery-title">Junpai's Banner</div></div></div>
+                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/c7c88dc5.jpg?v=9f729f0a" data-title="Decay's Banner"><img src="https://spooport.carrd.co/assets/images/gallery01/c7c88dc5.jpg?v=9f729f0a" class="gallery-image" loading="lazy" alt="banner"><div class="gallery-overlay"><div class="gallery-title">Decay's Banner</div></div></div>
+                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/2315491f.jpg?v=9f729f0a" data-title="Gene's Banner"><img src="https://spooport.carrd.co/assets/images/gallery01/2315491f.jpg?v=9f729f0a" class="gallery-image" loading="lazy" alt="banner"><div class="gallery-overlay"><div class="gallery-title">Gene's Banner</div></div></div>
+                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/c616c983.jpg?v=9f729f0a" data-title="Exactrial's banner"><img src="https://spooport.carrd.co/assets/images/gallery01/c616c983.jpg?v=9f729f0a" class="gallery-image" loading="lazy" alt="banner"><div class="gallery-overlay"><div class="gallery-title">Exactrial's banner</div></div></div>
+                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/354af913.jpg?v=9f729f0a" data-title="Arekk's banner"><img src="https://spooport.carrd.co/assets/images/gallery01/354af913.jpg?v=9f729f0a" class="gallery-image" loading="lazy" alt="banner"><div class="gallery-overlay"><div class="gallery-title">Arekk's banner</div></div></div>
+                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/ade286fe.jpg?v=9f729f0a" data-title="Magic's banner"><img src="https://spooport.carrd.co/assets/images/gallery01/ade286fe.jpg?v=9f729f0a" class="gallery-image" loading="lazy" alt="banner"><div class="gallery-overlay"><div class="gallery-title">Magic's banner</div></div></div>
+                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/cbb72789.jpg?v=9f729f0a" data-title="Mommy's banner"><img src="https://spooport.carrd.co/assets/images/gallery01/cbb72789.jpg?v=9f729f0a" class="gallery-image" loading="lazy" alt="banner"><div class="gallery-overlay"><div class="gallery-title">Mommy's banner</div></div></div>
+                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/d446c417.jpg?v=9f729f0a" data-title="Prop's banner"><img src="https://spooport.carrd.co/assets/images/gallery01/d446c417.jpg?v=9f729f0a" class="gallery-image" loading="lazy" alt="banner"><div class="gallery-overlay"><div class="gallery-title">Prop's banner</div></div></div>
+                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/d78c3fad.jpg?v=9f729f0a" data-title="Mortis's banner"><img src="https://spooport.carrd.co/assets/images/gallery01/d78c3fad.jpg?v=9f729f0a" class="gallery-image" loading="lazy" alt="banner"><div class="gallery-overlay"><div class="gallery-title">Mortis's banner</div></div></div>
+                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/d3996679.jpg?v=9f729f0a" data-title="Wish's banner"><img src="https://spooport.carrd.co/assets/images/gallery01/d3996679.jpg?v=9f729f0a" class="gallery-image" loading="lazy" alt="banner"><div class="gallery-overlay"><div class="gallery-title">Wish's banner</div></div></div>
+                <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery01/e2950245.jpg?v=9f729f0a" data-title="Test Open Banner"><img src="https://spooport.carrd.co/assets/images/gallery01/e2950245.jpg?v=9f729f0a" class="gallery-image" loading="lazy" alt="banner"><div class="gallery-overlay"><div class="gallery-title">Test Open Banner</div></div></div>
+            </div>
+        </div>
+    </section>
+
     <section id="tournaments" class="tournament-section">
         <div class="container">
             <div class="section-header">
                 <h2>osu! Tournament</h2>
-                <p>Professinal graphic designs for osu! Tournaments.</p>
+                <p>Professional graphic designs for osu! Tournaments.</p>
             </div>
-
             <div class="columns-container">
                 <div class="column">
-                    <!-- General Graphics -->
-                    <div class="year-section">
-                        <div class="year-header">
-                            <h3>General Graphics</h3>
-                        </div>
-                        <div class="gallery-grid">
-                            <!-- Website Graphics -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery10/13bf113e.jpg?v=9f729f0a" data-title="Website Graphics">
-                                <img src="https://spooport.carrd.co/assets/images/gallery10/13bf113e.jpg?v=9f729f0a" 
-                                     alt="Website graphics" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Website Graphics</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Website Design 1 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery11/da281e06.png?v=9f729f0a" data-title="Website Design 1">
-                                <img src="https://spooport.carrd.co/assets/images/gallery11/da281e06.png?v=9f729f0a" 
-                                     alt="Website design 1" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Website Design 1</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Website Design 2 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery11/90731767.png?v=9f729f0a" data-title="Website Design 2">
-                                <img src="https://spooport.carrd.co/assets/images/gallery11/90731767.png?v=9f729f0a" 
-                                     alt="Website design 2" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Website Design 2</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Banner Design 1 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery12/05473a6a.png?v=9f729f0a" data-title="Banner Design 1">
-                                <img src="https://spooport.carrd.co/assets/images/gallery12/05473a6a.png?v=9f729f0a" 
-                                     alt="Banner design 1" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Banner Design 1</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Banner Design 2 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery12/cbae3082.png?v=9f729f0a" data-title="Banner Design 2">
-                                <img src="https://spooport.carrd.co/assets/images/gallery12/cbae3082.png?v=9f729f0a" 
-                                     alt="Banner design 2" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Banner Design 2</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Graphic Design 1 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery12/242e6245.jpg?v=9f729f0a" data-title="Graphic Design 1">
-                                <img src="https://spooport.carrd.co/assets/images/gallery12/242e6245.jpg?v=9f729f0a" 
-                                     alt="Graphic design 1" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Graphic Design 1</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Fairy Bread Bakeoff! -->
-                    <div class="year-section">
-                        <div class="year-header">
-                            <h3>Fairy Bread Bakeoff!</h3>
-                        </div>
-                        <div class="gallery-grid">
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery13/819cc127.jpg?v=9f729f0a" data-title="Fairy Bread Bakeoff!">
-                                <img src="https://spooport.carrd.co/assets/images/gallery13/819cc127.jpg?v=9f729f0a" 
-                                     alt="Fairy Bread Bakeoff!" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Fairy Bread Bakeoff!</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Graphic Design 2 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery14/3e77f5ff.jpg?v=9f729f0a" data-title="Graphic Design 2">
-                                <img src="https://spooport.carrd.co/assets/images/gallery14/3e77f5ff.jpg?v=9f729f0a" 
-                                     alt="Graphic design 2" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Graphic Design 2</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Icon Sets -->
-                    <div class="year-section">
-                        <div class="year-header">
-                            <h3>Icon Sets</h3>
-                        </div>
-                        <div class="gallery-grid">
-                            <!-- Icon Set 1 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery15/1055ad39.png?v=9f729f0a" data-title="Icon Set 1">
-                                <img src="https://spooport.carrd.co/assets/images/gallery15/1055ad39.png?v=9f729f0a" 
-                                     alt="Icon set 1" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Icon Set 1</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Icon Set 2 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery15/f8165180.png?v=9f729f0a" data-title="Icon Set 2">
-                                <img src="https://spooport.carrd.co/assets/images/gallery15/f8165180.png?v=9f729f0a" 
-                                     alt="Icon set 2" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Icon Set 2</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Icon Set 3 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery15/5e147ec9.png?v=9f729f0a" data-title="Icon Set 3">
-                                <img src="https://spooport.carrd.co/assets/images/gallery15/5e147ec9.png?v=9f729f0a" 
-                                     alt="Icon set 3" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Icon Set 3</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Icon Set 4 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery15/5077acec.png?v=9f729f0a" data-title="Icon Set 4">
-                                <img src="https://spooport.carrd.co/assets/images/gallery15/5077acec.png?v=9f729f0a" 
-                                     alt="Icon set 4" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Icon Set 4</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Icon Set 5 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery15/bcc60628.png?v=9f729f0a" data-title="Icon Set 5">
-                                <img src="https://spooport.carrd.co/assets/images/gallery15/bcc60628.png?v=9f729f0a" 
-                                     alt="Icon set 5" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Icon Set 5</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="year-section"><div class="year-header"><h3>General Graphics</h3></div>
+                    <div class="gallery-grid"><div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery10/13bf113e.jpg?v=9f729f0a" data-title="Website Graphics"><img src="https://spooport.carrd.co/assets/images/gallery10/13bf113e.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Website Graphics</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery11/da281e06.png?v=9f729f0a" data-title="Website Design 1"><img src="https://spooport.carrd.co/assets/images/gallery11/da281e06.png?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Website Design 1</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery11/90731767.png?v=9f729f0a" data-title="Website Design 2"><img src="https://spooport.carrd.co/assets/images/gallery11/90731767.png?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Website Design 2</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery12/05473a6a.png?v=9f729f0a" data-title="Banner Design 1"><img src="https://spooport.carrd.co/assets/images/gallery12/05473a6a.png?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Banner Design 1</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery12/cbae3082.png?v=9f729f0a" data-title="Banner Design 2"><img src="https://spooport.carrd.co/assets/images/gallery12/cbae3082.png?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Banner Design 2</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery12/242e6245.jpg?v=9f729f0a" data-title="Graphic Design 1"><img src="https://spooport.carrd.co/assets/images/gallery12/242e6245.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Graphic Design 1</div></div></div>
+                    </div></div>
+                    <div class="year-section"><div class="year-header"><h3>Fairy Bread Bakeoff!</h3></div>
+                    <div class="gallery-grid"><div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery13/819cc127.jpg?v=9f729f0a" data-title="Fairy Bread Bakeoff!"><img src="https://spooport.carrd.co/assets/images/gallery13/819cc127.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Fairy Bread Bakeoff!</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery14/3e77f5ff.jpg?v=9f729f0a" data-title="Graphic Design 2"><img src="https://spooport.carrd.co/assets/images/gallery14/3e77f5ff.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Graphic Design 2</div></div></div>
+                    </div></div>
+                    <div class="year-section"><div class="year-header"><h3>Icon Sets</h3></div>
+                    <div class="gallery-grid"><div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery15/1055ad39.png?v=9f729f0a" data-title="Icon Set 1"><img src="https://spooport.carrd.co/assets/images/gallery15/1055ad39.png?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Icon Set 1</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery15/f8165180.png?v=9f729f0a" data-title="Icon Set 2"><img src="https://spooport.carrd.co/assets/images/gallery15/f8165180.png?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Icon Set 2</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery15/5e147ec9.png?v=9f729f0a" data-title="Icon Set 3"><img src="https://spooport.carrd.co/assets/images/gallery15/5e147ec9.png?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Icon Set 3</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery15/5077acec.png?v=9f729f0a" data-title="Icon Set 4"><img src="https://spooport.carrd.co/assets/images/gallery15/5077acec.png?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Icon Set 4</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery15/bcc60628.png?v=9f729f0a" data-title="Icon Set 5"><img src="https://spooport.carrd.co/assets/images/gallery15/bcc60628.png?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Icon Set 5</div></div></div>
+                    </div></div>
                 </div>
-
                 <div class="column">
-                    <!-- 2023 Graphics -->
-                    <div class="year-section">
-                        <div class="year-header">
-                            <h3>2023 Graphics</h3>
-                        </div>
-                        <div class="gallery-grid">
-                            <!-- 5WC 2023 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery08/c30fe0ca.jpg?v=9f729f0a" data-title="5WC 2023">
-                                <img src="https://spooport.carrd.co/assets/images/gallery08/c30fe0ca.jpg?v=9f729f0a" 
-                                     alt="5WC 2023" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">5WC 2023</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2024 Graphics -->
-                    <div class="year-section">
-                        <div class="year-header">
-                            <h3>2024 Graphics</h3>
-                        </div>
-                        <div class="gallery-grid">
-                            <!-- Graphic 2024-1 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery07/73fd0ccb.jpg?v=9f729f0a" data-title="Tournament Graphic 1">
-                                <img src="https://spooport.carrd.co/assets/images/gallery07/73fd0ccb.jpg?v=9f729f0a" 
-                                     alt="Graphic 2024-1" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Tournament Graphic 1</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Graphic 2024-2 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery07/c536329f.jpg?v=9f729f0a" data-title="Tournament Graphic 2">
-                                <img src="https://spooport.carrd.co/assets/images/gallery07/c536329f.jpg?v=9f729f0a" 
-                                     alt="Graphic 2024-2" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Tournament Graphic 2</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Graphic 2024-3 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery07/aa5aa4ec.jpg?v=9f729f0a" data-title="Tournament Graphic 3">
-                                <img src="https://spooport.carrd.co/assets/images/gallery07/aa5aa4ec.jpg?v=9f729f0a" 
-                                     alt="Graphic 2024-3" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Tournament Graphic 3</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Graphic 2024-4 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery07/3e341b09.jpg?v=9f729f0a" data-title="Tournament Graphic 4">
-                                <img src="https://spooport.carrd.co/assets/images/gallery07/3e341b09.jpg?v=9f729f0a" 
-                                     alt="Graphic 2024-4" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Tournament Graphic 4</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Graphic 2024-5 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery07/9bcfa00c.jpg?v=9f729f0a" data-title="Tournament Graphic 5">
-                                <img src="https://spooport.carrd.co/assets/images/gallery07/9bcfa00c.jpg?v=9f729f0a" 
-                                     alt="Graphic 2024-5" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Tournament Graphic 5</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Graphic 2024-6 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery07/a77fe447.jpg?v=9f729f0a" data-title="Tournament Graphic 6">
-                                <img src="https://spooport.carrd.co/assets/images/gallery07/a77fe447.jpg?v=9f729f0a" 
-                                     alt="Graphic 2024-6" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Tournament Graphic 6</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Additional Graphics -->
-                    <div class="year-section">
-                        <div class="year-header">
-                            <h3>Additional Graphics</h3>
-                        </div>
-                        <div class="gallery-grid">
-                            <!-- Small Graphic 1 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery09/839465d3.jpg?v=9f729f0a" data-title="Small Graphic 1">
-                                <img src="https://spooport.carrd.co/assets/images/gallery09/839465d3.jpg?v=9f729f0a" 
-                                     alt="Small graphic 1" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Additional Graphics 1</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Small Graphic 2 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery09/fa6f4d97.jpg?v=9f729f0a" data-title="Small Graphic 2">
-                                <img src="https://spooport.carrd.co/assets/images/gallery09/fa6f4d97.jpg?v=9f729f0a" 
-                                     alt="Small graphic 2" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Additional Graphics 2</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Small Graphic 3 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery09/155aec85.jpg?v=9f729f0a" data-title="Small Graphic 3">
-                                <img src="https://spooport.carrd.co/assets/images/gallery09/155aec85.jpg?v=9f729f0a" 
-                                     alt="Small graphic 3" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Additional Graphics 3</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Small Graphic 4 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery09/22d4ff07.jpg?v=9f729f0a" data-title="Small Graphic 4">
-                                <img src="https://spooport.carrd.co/assets/images/gallery09/22d4ff07.jpg?v=9f729f0a" 
-                                     alt="Small graphic 4" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Additional Graphics 4</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Small Graphic 5 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery09/75d9c4fe.jpg?v=9f729f0a" data-title="Small Graphic 5">
-                                <img src="https://spooport.carrd.co/assets/images/gallery09/75d9c4fe.jpg?v=9f729f0a" 
-                                     alt="Small graphic 5" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Additional Graphics 5</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Additional Graphic 1 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery02/f897213f.jpg?v=9f729f0a" data-title="Additional Graphic 1">
-                                <img src="https://spooport.carrd.co/assets/images/gallery02/f897213f.jpg?v=9f729f0a" 
-                                     alt="Additional graphic 1" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Additional Graphic 6</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Additional Graphic 2 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery02/77639f4f.jpg?v=9f729f0a" data-title="Additional Graphic 2">
-                                <img src="https://spooport.carrd.co/assets/images/gallery02/77639f4f.jpg?v=9f729f0a" 
-                                     alt="Additional graphic 2" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Additional Graphic 7</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Additional Graphic 3 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery02/d6843553.jpg?v=9f729f0a" data-title="Additional Graphic 3">
-                                <img src="https://spooport.carrd.co/assets/images/gallery02/d6843553.jpg?v=9f729f0a" 
-                                     alt="Additional graphic 3" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Additional Graphic 8</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Additional Graphic 4 -->
-                            <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery02/497a4bcb.jpg?v=9f729f0a" data-title="Additional Graphic 4">
-                                <img src="https://spooport.carrd.co/assets/images/gallery02/497a4bcb.jpg?v=9f729f0a" 
-                                     alt="Additional graphic 4" 
-                                     class="gallery-image"
-                                     loading="lazy">
-                                <div class="gallery-overlay">
-                                    <div class="gallery-title">Additional Graphic 9</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="year-section"><div class="year-header"><h3>2023 Graphics</h3></div>
+                    <div class="gallery-grid"><div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery08/c30fe0ca.jpg?v=9f729f0a" data-title="5WC 2023"><img src="https://spooport.carrd.co/assets/images/gallery08/c30fe0ca.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">5WC 2023</div></div></div>
+                    </div></div>
+                    <div class="year-section"><div class="year-header"><h3>2024 Graphics</h3></div>
+                    <div class="gallery-grid"><div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery07/73fd0ccb.jpg?v=9f729f0a" data-title="Tournament Graphic 1"><img src="https://spooport.carrd.co/assets/images/gallery07/73fd0ccb.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Tournament Graphic 1</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery07/c536329f.jpg?v=9f729f0a" data-title="Tournament Graphic 2"><img src="https://spooport.carrd.co/assets/images/gallery07/c536329f.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Tournament Graphic 2</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery07/aa5aa4ec.jpg?v=9f729f0a" data-title="Tournament Graphic 3"><img src="https://spooport.carrd.co/assets/images/gallery07/aa5aa4ec.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Tournament Graphic 3</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery07/3e341b09.jpg?v=9f729f0a" data-title="Tournament Graphic 4"><img src="https://spooport.carrd.co/assets/images/gallery07/3e341b09.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Tournament Graphic 4</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery07/9bcfa00c.jpg?v=9f729f0a" data-title="Tournament Graphic 5"><img src="https://spooport.carrd.co/assets/images/gallery07/9bcfa00c.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Tournament Graphic 5</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery07/a77fe447.jpg?v=9f729f0a" data-title="Tournament Graphic 6"><img src="https://spooport.carrd.co/assets/images/gallery07/a77fe447.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Tournament Graphic 6</div></div></div>
+                    </div></div>
+                    <div class="year-section"><div class="year-header"><h3>Additional Graphics</h3></div>
+                    <div class="gallery-grid"><div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery09/839465d3.jpg?v=9f729f0a" data-title="Additional Graphics 1"><img src="https://spooport.carrd.co/assets/images/gallery09/839465d3.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Additional Graphics 1</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery09/fa6f4d97.jpg?v=9f729f0a" data-title="Additional Graphics 2"><img src="https://spooport.carrd.co/assets/images/gallery09/fa6f4d97.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Additional Graphics 2</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery09/155aec85.jpg?v=9f729f0a" data-title="Additional Graphics 3"><img src="https://spooport.carrd.co/assets/images/gallery09/155aec85.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Additional Graphics 3</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery09/22d4ff07.jpg?v=9f729f0a" data-title="Additional Graphics 4"><img src="https://spooport.carrd.co/assets/images/gallery09/22d4ff07.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Additional Graphics 4</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery09/75d9c4fe.jpg?v=9f729f0a" data-title="Additional Graphics 5"><img src="https://spooport.carrd.co/assets/images/gallery09/75d9c4fe.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Additional Graphics 5</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery02/f897213f.jpg?v=9f729f0a" data-title="Additional Graphic 6"><img src="https://spooport.carrd.co/assets/images/gallery02/f897213f.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Additional Graphic 6</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery02/77639f4f.jpg?v=9f729f0a" data-title="Additional Graphic 7"><img src="https://spooport.carrd.co/assets/images/gallery02/77639f4f.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Additional Graphic 7</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery02/d6843553.jpg?v=9f729f0a" data-title="Additional Graphic 8"><img src="https://spooport.carrd.co/assets/images/gallery02/d6843553.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Additional Graphic 8</div></div></div>
+                    <div class="gallery-item" data-image="https://spooport.carrd.co/assets/images/gallery02/497a4bcb.jpg?v=9f729f0a" data-title="Additional Graphic 9"><img src="https://spooport.carrd.co/assets/images/gallery02/497a4bcb.jpg?v=9f729f0a" class="gallery-image" loading="lazy"><div class="gallery-overlay"><div class="gallery-title">Additional Graphic 9</div></div></div>
+                    </div></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Coming Soon -->
     <section class="coming-soon">
         <div class="container">
             <h2>! More Coming Soon !</h2>
             <p>Stay tuned for new content and updates. Working on exciting new projects!</p>
         </div>
     </section>
-    <!-- Footer -->
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <a href="#" class="footer-logo">
-                    <img src="https://spooport.carrd.co/assets/images/image01.png?v=9f729f0a" 
-                         alt="Spoo Logo" 
-                         class="footer-logo-img">
+                <a href="#" class="footer-logo" style="text-decoration: none; display: inline-flex; align-items: center; gap: 10px;">
+                    <img src="https://spooport.carrd.co/assets/images/image01.png?v=9f729f0a" class="footer-logo-img" alt="Spoo">
                     <span class="nav-logo">Spoo</span>
                 </a>
-                
-<div class="social-links">
-  <a href="https://x.com/SpooSenpai" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-    <i class="fab fa-twitter"></i>
-  </a>
-  <a href="https://www.twitch.tv/spoo_senpai" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitch">
-    <i class="fab fa-twitch"></i>
-  </a>
-  <a href="https://discord.gg/Mc7RdxndjP" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Discord">
-    <i class="fab fa-discord"></i>
-  </a>
-  <a href="https://www.youtube.com/@SpooSenpai" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-    <i class="fab fa-youtube"></i>
-  </a>
-  <a href="https://osu.ppy.sh/users/11805037" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="osu!">
-    <svg viewBox="0 0 512 512" class="osu-icon" aria-hidden="true">
-      <circle cx="256" cy="256" r="240" fill="none" stroke="currentColor" stroke-width="48" />
-      <text x="256" y="315" text-anchor="middle" font-size="240" font-family="Arial Black, Arial, sans-serif" fill="currentColor">osu!</text>
-    </svg>
-  </a>
-</div>
-                
-                <p class="copyright">
-                    © 2026 Spoo's Portfolio. All rights reserved.<br>
-                    Made with <i class="fas fa-heart" style="color: #ff6b8b;"></i> passion and creativity.
-                </p>
+                <div class="social-links">
+                    <a href="https://x.com/SpooSenpai" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.twitch.tv/spoo_senpai" class="social-link" target="_blank"><i class="fab fa-twitch"></i></a>
+                    <a href="https://discord.gg/Mc7RdxndjP" class="social-link" target="_blank"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.youtube.com/@SpooSenpai" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://osu.ppy.sh/users/11805037" class="social-link" target="_blank"><svg viewBox="0 0 512 512" class="osu-icon"><circle cx="256" cy="256" r="240" fill="none" stroke="currentColor" stroke-width="48"/><text x="256" y="315" text-anchor="middle" font-size="240" font-family="Arial Black" fill="currentColor">osu!</text></svg></a>
+                </div>
+                <p class="copyright">© 2026 Spoo's Portfolio. All rights reserved.<br>Made with <i class="fas fa-heart" style="color: #ff6b8b;"></i> passion and creativity.</p>
             </div>
         </div>
     </footer>
 
+    <button class="back-to-top" id="backToTopBtn" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        (function() {
             // Navbar scroll effect
             const nav = document.querySelector('.main-nav');
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 100) {
-                    nav.classList.add('scrolled');
-                } else {
-                    nav.classList.remove('scrolled');
-                }
-            });
+            if (nav) {
+                window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 100));
+            }
 
-            // Smooth scrolling for anchor links
+            // Mobile menu toggle
+            const menuToggle = document.getElementById('menuToggle');
+            const navLinks = document.getElementById('navLinks');
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+                document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('active')));
+            }
+
+            // Smooth scroll for anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    
-                    e.preventDefault();
+                    if (!targetId || targetId === '#') return;
                     const target = document.querySelector(targetId);
                     if (target) {
-                        window.scrollTo({
-                            top: target.offsetTop - 100,
-                            behavior: 'smooth'
-                        });
+                        e.preventDefault();
+                        window.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
                     }
                 });
             });
+
+            // Tournaments: collect and sort subsections newest -> oldest by year (supports data-year or year in h3 text)
+            (function sortTournamentSections() {
+                const tournamentsWrapper = document.querySelector('#tournaments .columns-container');
+                if (!tournamentsWrapper) return;
+
+                // collect all year-section nodes (they may be inside columns)
+                const yearSections = Array.from(tournamentsWrapper.querySelectorAll('.year-section'));
+                if (!yearSections.length) return;
+
+                const parseYear = (el) => {
+                    // priority: data-year attribute
+                    if (el.dataset && el.dataset.year) {
+                        const y = parseInt(el.dataset.year, 10);
+                        if (!isNaN(y)) return y;
+                    }
+                    // look for a 4-digit year in the header text (h3)
+                    const h3 = el.querySelector('.year-header h3') || el.querySelector('h3');
+                    if (h3) {
+                        const m = h3.textContent.match(/(19|20)\d{2}/);
+                        if (m) return parseInt(m[0], 10);
+                    }
+                    return 0;
+                };
+
+                // sort descending (newest first)
+                yearSections.sort((a, b) => parseYear(b) - parseYear(a));
+
+                // remove existing sections from DOM
+                yearSections.forEach(s => s.remove());
+
+                // redistribute into columns evenly to preserve two-column layout
+                const columns = Array.from(tournamentsWrapper.querySelectorAll('.column'));
+                if (!columns.length) {
+                    // if no columns, append back to wrapper
+                    yearSections.forEach(s => tournamentsWrapper.appendChild(s));
+                } else {
+                    yearSections.forEach((s, i) => {
+                        columns[i % columns.length].appendChild(s);
+                    });
+                }
+            })();
 
             // Scroll animations
+            const animElements = [...document.querySelectorAll('.gallery-item'), ...document.querySelectorAll('.skin-item')];
             const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, {
-                threshold: 0.1,
-                rootMargin: '50px'
-            });
-
-            // Observe gallery items for animation
-            document.querySelectorAll('.gallery-item').forEach((el, index) => {
+                entries.forEach(entry => entry.target.classList.toggle('visible', entry.isIntersecting));
+            }, { threshold: 0.1, rootMargin: '30px' });
+            
+            animElements.forEach((el, i) => {
                 el.classList.add('animate-on-scroll');
-                el.classList.add(`stagger-delay-${(index % 5) + 1}`);
+                el.classList.add(`stagger-delay-${(i % 5) + 1}`);
                 observer.observe(el);
             });
 
-            // === IMAGE PREVIEW FUNCTIONALITY ===
+            // Back to top button
+            const backBtn = document.getElementById('backToTopBtn');
+            if (backBtn) {
+                window.addEventListener('scroll', () => backBtn.classList.toggle('visible', window.scrollY > 400));
+                backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+            }
+
+            // Image preview functionality (only for .gallery-item)
             const previewOverlay = document.getElementById('imagePreview');
             const previewImage = document.getElementById('previewImage');
             const previewInfo = document.getElementById('previewInfo');
             const closePreview = document.getElementById('closePreview');
-            const prevButton = document.getElementById('prevImage');
-            const nextButton = document.getElementById('nextImage');
-            
-            let currentImageIndex = 0;
-            let allGalleryItems = [];
-            let isZoomed = false;
-            
-            // Collect all gallery items for navigation
-            function collectGalleryItems() {
-                allGalleryItems = Array.from(document.querySelectorAll('.gallery-item'));
-                // Also include anchor links that have data-image attribute
-                document.querySelectorAll('a.gallery-item').forEach(item => {
-                    if (item.getAttribute('data-image') && !allGalleryItems.includes(item)) {
-                        allGalleryItems.push(item);
-                    }
-                });
+            const prevBtn = document.getElementById('prevImage');
+            const nextBtn = document.getElementById('nextImage');
+            let currentItems = [];
+            let currentIdx = 0;
+
+            function updateItems() {
+                currentItems = Array.from(document.querySelectorAll('.gallery-item'));
             }
-            
-            collectGalleryItems();
-            
-            // Open preview
-            function openPreview(imageSrc, title, index) {
-                previewImage.src = imageSrc;
-                previewInfo.textContent = title || 'Image Preview';
+            updateItems();
+
+            function openPreview(src, title, idx) {
+                if (!previewOverlay || !previewImage) return;
+                previewImage.src = src;
+                previewInfo.textContent = title;
                 previewOverlay.classList.add('active');
-                document.body.style.overflow = 'hidden'; // Prevent scrolling
-                currentImageIndex = index;
-                isZoomed = false;
-                previewImage.classList.remove('zoomed');
-                
-                // Update navigation button visibility
-                updateNavButtons();
+                document.body.style.overflow = 'hidden';
+                currentIdx = idx;
             }
-            
-            // Close preview
-            function closePreviewModal() {
+
+            function closeModal() {
+                if (!previewOverlay) return;
                 previewOverlay.classList.remove('active');
-                document.body.style.overflow = ''; // Restore scrolling
-                isZoomed = false;
-                previewImage.classList.remove('zoomed');
+                document.body.style.overflow = '';
+                previewImage.src = '';
             }
-            
-            // Navigate to previous image
-            function showPrevImage() {
-                if (allGalleryItems.length === 0) return;
-                
-                currentImageIndex = (currentImageIndex - 1 + allGalleryItems.length) % allGalleryItems.length;
-                const item = allGalleryItems[currentImageIndex];
-                const imageSrc = item.getAttribute('data-image') || item.querySelector('img').src;
-                const title = item.getAttribute('data-title') || item.querySelector('.gallery-title')?.textContent || 'Image';
-                
-                previewImage.src = imageSrc;
-                previewInfo.textContent = title;
-                isZoomed = false;
-                previewImage.classList.remove('zoomed');
-                updateNavButtons();
+
+            function showPrev() {
+                if (!currentItems.length) return;
+                currentIdx = (currentIdx - 1 + currentItems.length) % currentItems.length;
+                const item = currentItems[currentIdx];
+                const src = item.dataset.image || item.querySelector('img')?.src;
+                const title = item.dataset.title || item.querySelector('.gallery-title')?.textContent || 'Artwork';
+                if (src) openPreview(src, title, currentIdx);
             }
-            
-            // Navigate to next image
-            function showNextImage() {
-                if (allGalleryItems.length === 0) return;
-                
-                currentImageIndex = (currentImageIndex + 1) % allGalleryItems.length;
-                const item = allGalleryItems[currentImageIndex];
-                const imageSrc = item.getAttribute('data-image') || item.querySelector('img').src;
-                const title = item.getAttribute('data-title') || item.querySelector('.gallery-title')?.textContent || 'Image';
-                
-                previewImage.src = imageSrc;
-                previewInfo.textContent = title;
-                isZoomed = false;
-                previewImage.classList.remove('zoomed');
-                updateNavButtons();
+
+            function showNext() {
+                if (!currentItems.length) return;
+                currentIdx = (currentIdx + 1) % currentItems.length;
+                const item = currentItems[currentIdx];
+                const src = item.dataset.image || item.querySelector('img')?.src;
+                const title = item.dataset.title || item.querySelector('.gallery-title')?.textContent || 'Artwork';
+                if (src) openPreview(src, title, currentIdx);
             }
-            
-            // Toggle zoom on image
-            function toggleZoom() {
-                isZoomed = !isZoomed;
-                previewImage.classList.toggle('zoomed', isZoomed);
-            }
-            
-            // Update navigation button states
-            function updateNavButtons() {
-                // Always show buttons if there are multiple images
-                prevButton.style.display = allGalleryItems.length > 1 ? 'flex' : 'none';
-                nextButton.style.display = allGalleryItems.length > 1 ? 'flex' : 'none';
-            }
-            
-            // Add click event to gallery items
-            allGalleryItems.forEach((item, index) => {
-                item.addEventListener('click', function(e) {
-                    const href = this.tagName === 'A' ? this.getAttribute('href') : null;
 
-                    // Special-case: allow osu! skin links to navigate (they should open osu.ppy.sh externally)
-                    if (href && href.includes('osu.ppy.sh')) {
-                        return; // follow the link
-                    }
-
-                    // If it's an anchor but also has a data-image (banner thumbnails), open the preview instead of navigating
-                    if (this.tagName === 'A' && href && this.getAttribute('data-image')) {
-                        // fall through to open preview
-                    } else if (this.tagName === 'A' && href && !href.startsWith('#')) {
-                        // Other links (external/internal anchors) should behave normally
-                        return;
-                    }
-
-                    e.preventDefault();
-                    e.stopPropagation();
-
-                    const imageSrc = this.getAttribute('data-image') || this.querySelector('img').src;
-                    const title = this.getAttribute('data-title') || this.querySelector('.gallery-title')?.textContent || 'Image';
-
-                    openPreview(imageSrc, title, index);
-                });
-            });
-            
-            // Close preview events
-            closePreview.addEventListener('click', closePreviewModal);
-            previewOverlay.addEventListener('click', function(e) {
-                if (e.target === previewOverlay) {
-                    closePreviewModal();
+            // Event delegation for gallery items
+            document.body.addEventListener('click', (e) => {
+                const galleryItem = e.target.closest('.gallery-item');
+                if (!galleryItem) return;
+                e.preventDefault();
+                const src = galleryItem.dataset.image || galleryItem.querySelector('img')?.src;
+                const title = galleryItem.dataset.title || galleryItem.querySelector('.gallery-title')?.textContent || 'Image';
+                if (src) {
+                    updateItems();
+                    const idx = currentItems.findIndex(i => i === galleryItem);
+                    openPreview(src, title, idx >= 0 ? idx : 0);
                 }
             });
-            
-            // Toggle zoom on image click
-            previewImage.addEventListener('click', function(e) {
-                e.stopPropagation();
-                toggleZoom();
+
+            if (closePreview) closePreview.addEventListener('click', closeModal);
+            if (previewOverlay) previewOverlay.addEventListener('click', (e) => { if (e.target === previewOverlay) closeModal(); });
+            if (prevBtn) prevBtn.addEventListener('click', showPrev);
+            if (nextBtn) nextBtn.addEventListener('click', showNext);
+            document.addEventListener('keydown', (e) => {
+                if (!previewOverlay || !previewOverlay.classList.contains('active')) return;
+                if (e.key === 'Escape') closeModal();
+                if (e.key === 'ArrowLeft') showPrev();
+                if (e.key === 'ArrowRight') showNext();
             });
-            
-            // Keyboard navigation
-            document.addEventListener('keydown', function(e) {
-                if (!previewOverlay.classList.contains('active')) return;
-                
-                switch(e.key) {
-                    case 'Escape':
-                        closePreviewModal();
-                        break;
-                    case 'ArrowLeft':
-                        showPrevImage();
-                        break;
-                    case 'ArrowRight':
-                        showNextImage();
-                        break;
-                    case ' ':
-                    case 'Spacebar':
-                        e.preventDefault();
-                        toggleZoom();
-                        break;
-                }
-            });
-            
-            // Navigation buttons
-            prevButton.addEventListener('click', showPrevImage);
-            nextButton.addEventListener('click', showNextImage);
-            
-            // Prevent right-click on images to avoid context menu
-            document.querySelectorAll('.gallery-image').forEach(img => {
-                img.addEventListener('contextmenu', function(e) {
-                    e.preventDefault();
-                });
-            });
-            
-            // Make preview follow viewport on scroll
-            window.addEventListener('scroll', function() {
-                if (previewOverlay.classList.contains('active')) {
-                    // The preview overlay is fixed, so it already follows the viewport
-                    // We just need to ensure it stays in place
-                    previewOverlay.style.top = window.scrollY + 'px';
-                }
-            });
-            
-            // Handle window resize
-            window.addEventListener('resize', function() {
-                if (previewOverlay.classList.contains('active')) {
-                    // Reset zoom on resize
-                    isZoomed = false;
-                    previewImage.classList.remove('zoomed');
-                }
-            });
-        });
+        })();
     </script>
 </body>
 </html>
