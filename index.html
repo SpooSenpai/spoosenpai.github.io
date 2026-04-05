@@ -522,12 +522,15 @@
       }
 
       .profile-frame {
+        /* decorative frame neutralized - kept to avoid breaking layout if referenced elsewhere */
         position: relative;
         display: inline-block;
-        padding: 12px;
-        background: var(--gradient-primary);
-        border-radius: 24px;
-        animation: borderGlow 3s ease-in-out infinite;
+        padding: 0;
+        background: transparent;
+        border-radius: 0;
+        animation: none;
+        box-shadow: none;
+        border: none;
       }
 
       @keyframes borderGlow {
@@ -538,32 +541,23 @@
       .profile-img {
         width: 280px;
         height: auto;
-        border-radius: 16px;
+        border-radius: 8px;
         display: block;
         position: relative;
         z-index: 2;
-        transition: var(--transition-smooth);
-        border: 4px solid rgba(255, 255, 255, 0.15);
+        transition: none; /* disable hover animation */
+        border: none;
+        box-shadow: none;
+        background: transparent;
       }
 
       .profile-img:hover {
-        transform: scale(1.05) rotate(1deg);
-        border-color: var(--primary);
+        transform: none;
+        border-color: transparent;
       }
 
       .profile-glow {
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        background: var(--gradient-primary);
-        filter: blur(80px);
-        opacity: 0.3;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        animation: pulse 4s ease-in-out infinite;
-        border-radius: 50%;
+        display: none; /* removed decorative glow */
       }
 
       @keyframes pulse {
@@ -1477,11 +1471,9 @@
     
     <section class="hero" id="main">
       <div class="container hero-content glass-dark">
-        <div class="profile-container floating">
-          <div class="profile-glow"></div>
-          <div class="profile-frame">
-            <img src="https://spoosenpai.carrd.co/assets/images/image01.png?v=ed3ab8a6" alt="SpooSenpai - Digital Artist" class="profile-img">
-          </div>
+        <div class="profile-container">
+          <!-- Simplified: show only the logo image (no decorative frame or glow) -->
+          <img src="https://spoosenpai.carrd.co/assets/images/image01.png?v=ed3ab8a6" alt="SpooSenpai - Digital Artist" class="profile-img logo-only">
           <div class="tagline">Digital Artist & Graphics Designer</div>
         </div>
         <h1 class="gradient-text">SpooSenpai</h1>
