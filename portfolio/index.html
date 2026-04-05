@@ -22,6 +22,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
+        /* ----- custom font: MADE SOULMAZE (personal use) ----- */
+        @font-face {
+            font-family: 'Soulmaze';
+            src: url('https://spoosenpai.xyz/font/MADE%20SOULMAZE%20PERSONAL%20USE.OTF') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -541,13 +550,17 @@
         .skin-item:hover .skin-thumb {
             transform: scale(1.02);
         }
+        /* ----- UPDATED: apply custom Soulmaze font to skin titles ----- */
         .skin-title {
-            font-family: 'Bagel Fat One', cursive;
-            font-size: 1.4rem;
+            font-family: 'Soulmaze', 'Bagel Fat One', cursive;
+            font-size: 1.6rem;
             margin: 0 0 6px 0;
             text-align: left;
             background: none;
             -webkit-text-fill-color: white;
+            letter-spacing: 0.01em;
+            font-weight: normal;
+            text-shadow: 0 2px 3px rgba(0,0,0,0.4);
         }
         .skin-desc {
             text-align: left;
